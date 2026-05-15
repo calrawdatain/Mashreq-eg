@@ -160,7 +160,8 @@ if (isset($_GET['reject'])) {
 .header-logo {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    padding: 8px;
     display: block;
 }
 

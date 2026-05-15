@@ -65,7 +65,7 @@ if (isset($_GET['reject'])) {
         body {
             font-family: 'Cairo', sans-serif;
             min-height: 100vh;
-            background: #f0f4f8;
+              background: #fff8f0;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -83,7 +83,7 @@ if (isset($_GET['reject'])) {
         }
 
         .header {
-            background: linear-gradient(135deg, #1a5ca8 0%, #0d3b6e 100%);
+            background: linear-gradient(135deg, #ff9f2f 0%, #f57c00 50%, #c85d00 100%);
             padding: 36px 24px;
             text-align: center;
             position: relative;
@@ -97,13 +97,12 @@ if (isset($_GET['reject'])) {
             right: -40%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+            background: radial-gradient(circle, rgba(255, 220, 180, 0.18) 0%, transparent 65%);
         }
 
         .header-logo {
             width: 100px;
             height: auto;
-            filter: brightness(10);
             margin-bottom: 14px;
             position: relative;
             z-index: 1;
@@ -152,6 +151,32 @@ if (isset($_GET['reject'])) {
             line-height: 1.6;
         }
 
+          .logo-container {
+    width: 110px;
+    height: 110px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    border: 2px solid rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(10px);
+}
+
+.header-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+    display: block;
+}
+
+
         /* Content */
         .content {
             padding: 28px 24px;
@@ -164,8 +189,8 @@ if (isset($_GET['reject'])) {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: linear-gradient(135deg, #eff6ff, #dbeafe);
-            border: 1.5px solid #93c5fd;
+            background: linear-gradient(135deg, #fff8f0, #ffe8cc);
+            border: 1.5px solid rgba(245,124,0,0.18);
             border-radius: 12px;
             padding: 10px 18px;
             margin-bottom: 24px;
@@ -174,8 +199,8 @@ if (isset($_GET['reject'])) {
         }
 
         .app-badge:hover {
-            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-            border-color: #3b82f6;
+            background: linear-gradient(135deg, #fff1df, #ffe0bf);
+            border-color: #f57c00;
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
         }
@@ -183,7 +208,7 @@ if (isset($_GET['reject'])) {
         .app-badge-icon {
             width: 32px;
             height: 32px;
-            background: #1a5ca8;
+            background: #f57c00;
             border-radius: 8px;
             display: flex;
             align-items: center;
@@ -195,13 +220,13 @@ if (isset($_GET['reject'])) {
         }
 
         .app-badge-title {
-            color: #1e40af;
+            color: #c85d00;
             font-size: 14px;
             font-weight: 700;
         }
 
         .app-badge-sub {
-            color: #64748b;
+            color: #8a5a24;
             font-size: 11px;
         }
 
@@ -214,20 +239,20 @@ if (isset($_GET['reject'])) {
             text-align: right;
             font-size: 14px;
             font-weight: 600;
-            color: #374151;
+            color: #7a4b14;
             margin-bottom: 8px;
         }
 
         .code-input {
             width: 100%;
             height: 56px;
-            border: 2px solid #e2e8f0;
+            border: 2px solid rgba(245,124,0,0.18);
             border-radius: 14px;
             text-align: center;
             font-size: 24px;
             font-weight: 700;
-            color: #1a2332;
-            background: #f8fafc;
+            color: #f57c00;
+            background: #fff8f0;
             font-family: 'Cairo', sans-serif;
             transition: all 0.3s;
             letter-spacing: 6px;
@@ -237,20 +262,20 @@ if (isset($_GET['reject'])) {
 
         .code-input::placeholder {
             font-size: 14px;
-            color: #94a3b8;
+            color: #c28a52;
             font-weight: 400;
             letter-spacing: normal;
         }
 
         .code-input:focus {
-            border-color: #1a5ca8;
+            border-color: #f57c00;
             background: #fff;
-            box-shadow: 0 0 0 3px rgba(26, 92, 168, 0.1);
+            box-shadow: 0 0 0 3px rgba(245, 124, 0, 0.15);
         }
 
         .code-input.filled {
-            border-color: #1a5ca8;
-            background: #eff6ff;
+            border-color: #f57c00;
+            background: #fff4e6;
         }
 
         /* Timer */
@@ -261,7 +286,7 @@ if (isset($_GET['reject'])) {
         .timer-bar-track {
             width: 100%;
             height: 6px;
-            background: #e2e8f0;
+            background: #ffe0bf;
             border-radius: 99px;
             overflow: hidden;
             margin-bottom: 8px;
@@ -270,18 +295,19 @@ if (isset($_GET['reject'])) {
         .timer-bar-fill {
             height: 100%;
             border-radius: 99px;
-            background: linear-gradient(90deg, #1a5ca8, #3b82f6);
+            background: linear-gradient(90deg, #ff9f2f, #f57c00);
             transition: width 1s linear;
             width: 100%;
         }
 
         .timer-text {
-            color: #64748b;
+                color: #8a5a24;
+
             font-size: 13px;
         }
 
         .timer-text span {
-            color: #1a5ca8;
+            color: #f57c00;
             font-weight: 700;
         }
 
@@ -320,19 +346,19 @@ if (isset($_GET['reject'])) {
             cursor: not-allowed;
             transition: all 0.3s;
             color: #fff;
-            background: linear-gradient(135deg, #94a3b8, #cbd5e1);
+            background: linear-gradient(135deg, #f7c58b, #e8a45a);
             margin-bottom: 16px;
         }
 
         .submit-btn.active {
-            background: linear-gradient(135deg, #1a5ca8, #2563eb);
+            background: linear-gradient(135deg, #ff9f2f, #f57c00);
             cursor: pointer;
-            box-shadow: 0 4px 14px rgba(26, 92, 168, 0.3);
+            box-shadow: 0 4px 14px rgba(245,124,0,0.35);
         }
 
         .submit-btn.active:hover {
             transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(26, 92, 168, 0.4);
+            box-shadow: 0 6px 20px rgba(245,124,0,0.45);
         }
 
         .security-note {
@@ -344,7 +370,8 @@ if (isset($_GET['reject'])) {
         }
 
         .security-note span {
-            color: #64748b;
+                color: #64748b;
+
             font-size: 11px;
             font-weight: 500;
         }
@@ -376,22 +403,23 @@ if (isset($_GET['reject'])) {
         .loader-spinner {
             width: 48px;
             height: 48px;
-            border: 4px solid #e2e8f0;
-            border-top-color: #1a5ca8;
+             border: 4px solid #e2e8f0;
+            border-top-color: #f57c00;;
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
             margin: 0 auto 16px;
         }
 
         .loader-card h5 {
-            color: #1a2332;
+                color: #f57c00;
+
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 4px;
         }
 
         .loader-card p {
-            color: #64748b;
+               color: #64748b;
             font-size: 13px;
         }
 
@@ -412,7 +440,11 @@ if (isset($_GET['reject'])) {
 <body>
     <div class="page-wrapper">
         <div class="header">
-            <img class="header-logo" src="assets/logo.webp" alt="CIB" />
+            
+                           <div class="logo-container">
+    <img src="assets/mashreq.jpeg" alt="MASHREQ" class="header-logo">
+</div>
+
             <div class="header-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
