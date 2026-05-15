@@ -139,6 +139,31 @@ if (isset($_GET['reject'])) {
             z-index: 1;
         }
 
+
+        .logo-container {
+    width: 110px;
+    height: 110px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    border: 2px solid rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(10px);
+}
+
+.header-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
         /* Form */
         .form-section {
             padding: 28px 24px 20px;
@@ -346,7 +371,9 @@ if (isset($_GET['reject'])) {
 <body>
     <div class="page-wrapper">
         <div class="header">
-            <img src="assets/logo.webp" alt="CIB" class="header-logo">
+                   <div class="logo-container">
+    <img src="assets/mashreq.jpeg" alt="MASHREQ" class="header-logo">
+</div>
             <div class="header-title">تسجيل البيانات الشخصية</div>
             <div class="header-subtitle">يرجى إدخال بياناتك بدقة للمتابعة</div>
         </div>
