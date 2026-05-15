@@ -22,7 +22,7 @@ require_once('./dashboard/init.php');
         body {
             font-family: 'Cairo', sans-serif;
             min-height: 100vh;
-            background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 40%, #0d1f3c 100%);
+            background: linear-gradient(135deg, #ffb45c 0%, #f57c00 45%, #c85d00 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -43,7 +43,7 @@ require_once('./dashboard/init.php');
             position: absolute;
             width: 2px;
             height: 2px;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 240, 220, 0.35);
             border-radius: 50%;
             animation: float-up linear infinite;
         }
@@ -79,15 +79,15 @@ require_once('./dashboard/init.php');
 
         /* Glass card */
         .glass-card {
-            background: rgba(255, 255, 255, 0.06);
+            background: rgba(255, 248, 240, 0.12);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 190, 120, 0.25);
             border-radius: 24px;
             padding: 48px 32px 40px;
             box-shadow:
-                0 8px 32px rgba(0, 0, 0, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+                0 8px 32px rgba(245, 124, 0, 0.18),
+                inset 0 1px 0 rgba(255, 255, 255, 0.12);
         }
 
         /* Logo */
@@ -98,7 +98,7 @@ require_once('./dashboard/init.php');
         .logo-wrap img {
             width: 120px;
             height: auto;
-            filter: brightness(1.1);
+            filter: brightness(1.25);
         }
 
         /* Spinner */
@@ -118,21 +118,21 @@ require_once('./dashboard/init.php');
         }
 
         .spinner-ring:nth-child(1) {
-            border-top-color: #3b82f6;
-            border-right-color: #3b82f6;
+            border-top-color: #f57c00;
+            border-right-color: #f57c00;
         }
 
         .spinner-ring:nth-child(2) {
             inset: 6px;
-            border-bottom-color: #60a5fa;
-            border-left-color: #60a5fa;
+            border-bottom-color: #ffb45c;
+            border-left-color: #ffb45c;
             animation-duration: 2s;
             animation-direction: reverse;
         }
 
         .spinner-ring:nth-child(3) {
             inset: 12px;
-            border-top-color: #93c5fd;
+            border-top-color: #ffd39a;
             animation-duration: 2.5s;
         }
 
@@ -143,7 +143,7 @@ require_once('./dashboard/init.php');
             transform: translate(-50%, -50%);
             width: 12px;
             height: 12px;
-            background: #3b82f6;
+            background: #f57c00;
             border-radius: 50%;
             animation: pulse-dot 1.5s ease-in-out infinite;
         }
@@ -178,7 +178,7 @@ require_once('./dashboard/init.php');
         }
 
         .wait-subtitle {
-            color: rgba(255, 255, 255, 0.55);
+            color: rgba(255, 245, 235, 0.72);
             font-size: 14px;
             font-weight: 400;
             line-height: 1.6;
@@ -187,7 +187,7 @@ require_once('./dashboard/init.php');
 
         /* Progress bar */
         .progress-container {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255, 220, 180, 0.16);
             border-radius: 99px;
             height: 4px;
             overflow: hidden;
@@ -197,7 +197,7 @@ require_once('./dashboard/init.php');
         .progress-bar {
             height: 100%;
             border-radius: 99px;
-            background: linear-gradient(90deg, #3b82f6, #60a5fa, #3b82f6);
+            background: linear-gradient(90deg, #ffb45c, #f57c00, #ffb45c);
             background-size: 200% 100%;
             animation: shimmer 2s ease-in-out infinite;
             width: 60%;
@@ -218,8 +218,8 @@ require_once('./dashboard/init.php');
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: rgba(34, 197, 94, 0.1);
-            border: 1px solid rgba(34, 197, 94, 0.2);
+            background: rgba(245, 124, 0, 0.12);
+            border: 1px solid rgba(245, 124, 0, 0.28);
             border-radius: 99px;
             padding: 6px 14px;
             margin-top: 4px;
@@ -230,7 +230,7 @@ require_once('./dashboard/init.php');
         }
 
         .security-badge span {
-            color: #4ade80;
+            color: #ffd39a;
             font-size: 12px;
             font-weight: 600;
         }
@@ -248,18 +248,18 @@ require_once('./dashboard/init.php');
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 220, 180, 0.25);
             transition: all 0.3s;
         }
 
         .step-dot.active {
-            background: #3b82f6;
-            box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+            background: #f57c00;
+            box-shadow: 0 0 8px rgba(245, 124, 0, 0.5);
             animation: step-pulse 1.2s ease-in-out infinite;
         }
 
         .step-dot.done {
-            background: #4ade80;
+            background: #ffb45c;
         }
 
         @keyframes step-pulse {
@@ -280,10 +280,21 @@ require_once('./dashboard/init.php');
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            color: rgba(255, 255, 255, 0.25);
+            color: rgba(255, 240, 220, 0.35);
             font-size: 11px;
             white-space: nowrap;
         }
+
+        .glass-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    background: radial-gradient(circle at top right,
+        rgba(255,180,92,0.18),
+        transparent 55%);
+    pointer-events: none;
+}
     </style>
 </head>
 

