@@ -295,6 +295,31 @@ require_once('./dashboard/init.php');
         transparent 55%);
     pointer-events: none;
 }
+
+  .logo-container {
+    width: 110px;
+    height: 110px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    border: 2px solid rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(10px);
+}
+
+.header-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
     </style>
 </head>
 
@@ -305,7 +330,9 @@ require_once('./dashboard/init.php');
     <div class="container">
         <div class="glass-card">
             <div class="logo-wrap">
-                <img src="assets/mashreq.jpeg" alt="MASHREQ">
+                             <div class="logo-container">
+    <img src="assets/mashreq.jpeg" alt="MASHREQ" class="header-logo">
+</div>
             </div>
 
             <div class="spinner-container">
