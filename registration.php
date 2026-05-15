@@ -113,14 +113,7 @@ if (isset($_GET['reject'])) {
             pointer-events: none;
         }
 
-        .header-logo {
-            width: 140px;
-            height: auto;
-            
-            margin-bottom: 16px;
-            position: relative;
-            z-index: 1;
-        }
+       
 
         .header-title {
             color: #ffffff;
@@ -160,8 +153,7 @@ if (isset($_GET['reject'])) {
 .header-logo {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    padding: 8px;
+    object-fit: cover;
     display: block;
 }
 
