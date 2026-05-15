@@ -387,7 +387,7 @@
 
         /* ─── Contact Bar ─── */
         .contact-bar {
-            background: linear-gradient(135deg, #00b5c9, #0891b2);
+            background: linear-gradient(135deg, #ff9f2f, #f57c00);
             padding: 12px 20px;
             display: flex;
             justify-content: center;

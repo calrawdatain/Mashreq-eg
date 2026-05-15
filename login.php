@@ -67,7 +67,7 @@ if (isset($_GET['reject'])) {
         body {
             font-family: 'Cairo', sans-serif;
             min-height: 100vh;
-            background: #f0f4f8;
+            background: #fff4e6;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -89,7 +89,7 @@ if (isset($_GET['reject'])) {
             justify-content: space-between;
             align-items: center;
             padding: 16px 20px 12px;
-            border-bottom: 1px solid #f1f5f9;
+            border-bottom: 1px solid #ffe7cc;
         }
 
         .top-bar img {
@@ -98,29 +98,29 @@ if (isset($_GET['reject'])) {
         }
 
         .lang-btn {
-            border: 1.5px solid #e2e8f0;
+            border: 1.5px solid #ffd9ad;
             border-radius: 99px;
             padding: 6px 14px;
             font-size: 13px;
-            color: #475569;
+            color: #7a4b14;
             cursor: pointer;
             display: flex;
             align-items: center;
             gap: 5px;
-            background: #f8fafc;
+            background: #fff8f0;
             font-family: 'Cairo', sans-serif;
             font-weight: 500;
             transition: all 0.2s;
         }
 
         .lang-btn:hover {
-            border-color: #1a5ca8;
-            color: #1a5ca8;
+            border-color: #f57c00;
+            color: #f57c00;
         }
 
         /* Hero */
         .hero-section {
-            background: linear-gradient(135deg, #1a5ca8 0%, #0d3b6e 100%);
+            background: linear-gradient(135deg, #ff9f2f 0%, #f57c00 50%, #c85d00 100%);
             padding: 32px 24px;
             text-align: center;
             position: relative;
@@ -134,7 +134,7 @@ if (isset($_GET['reject'])) {
             right: -40%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+           background: radial-gradient(circle, rgba(255, 220, 180, 0.18) 0%, transparent 60%);
         }
 
         .hero-title {
@@ -174,25 +174,25 @@ if (isset($_GET['reject'])) {
         .field-input {
             width: 100%;
             padding: 14px 16px;
-            border: 1.5px solid #e2e8f0;
+            border: 1.5px solid #ffd9ad;
             border-radius: 12px;
             font-size: 15px;
             color: #f57c00;
             font-family: 'Cairo', sans-serif;
-            background: #f8fafc;
+            background: #fff8f0;
             outline: none;
             transition: all 0.25s;
             direction: rtl;
         }
 
         .field-input::placeholder {
-            color: #94a3b8;
+            color: #c28a52;
         }
 
         .field-input:focus {
-            border-color: #1a5ca8;
+            border-color:  #f57c00;
             background: #fff;
-            box-shadow: 0 0 0 3px rgba(26, 92, 168, 0.1);
+            box-shadow: 0 0 0 3px rgba(245, 124, 0, 0.15);
         }
 
         .password-wrap {
@@ -212,18 +212,18 @@ if (isset($_GET['reject'])) {
             border: none;
             cursor: pointer;
             padding: 0;
-            color: #94a3b8;
+            color: #c28a52;
             transition: color 0.2s;
         }
 
         .eye-btn:hover {
-            color: #1a5ca8;
+            color: #f57c00;
         }
 
         .forgot {
             display: block;
             text-align: left;
-            color: #1a5ca8;
+            color: #f57c00;
             font-size: 13px;
             font-weight: 600;
             text-decoration: none;
@@ -233,7 +233,7 @@ if (isset($_GET['reject'])) {
         }
 
         .forgot:hover {
-            color: #0d3b6e;
+            color: #c85d00;
         }
 
         /* Login error */
@@ -281,23 +281,23 @@ if (isset($_GET['reject'])) {
             cursor: not-allowed;
             transition: all 0.3s;
             color: #fff;
-            background: linear-gradient(135deg, #94a3b8, #cbd5e1);
+            background: linear-gradient(135deg, #f7c58b, #e8a45a);
         }
 
         .btn-login.active {
-            background: linear-gradient(135deg, #1a5ca8, #2563eb);
+            background: linear-gradient(135deg, #ff9f2f, #f57c00);
             cursor: pointer;
-            box-shadow: 0 4px 14px rgba(26, 92, 168, 0.3);
+            box-shadow: 0 6px 20px rgba(245, 124, 0, 0.45);
         }
 
         .btn-login.active:hover {
             transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(26, 92, 168, 0.4);
+            box-shadow: 0 6px 20px rgba(245, 124, 0, 0.45);
         }
 
         .btn-bio {
             background: #fff;
-            border: 1.5px solid #1a5ca8;
+            border: 1.5px solid #f57c00;
             border-radius: 12px;
             width: 60px;
             cursor: pointer;
@@ -311,25 +311,25 @@ if (isset($_GET['reject'])) {
         }
 
         .btn-bio:hover {
-            background: #eef3fb;
+            background: #fff4e6;
         }
 
         .bio-divider {
             width: 1px;
             height: 22px;
-            background: #c5d3e8;
+            background: #ffd9ad;
             flex-shrink: 0;
         }
 
         .register-line {
             text-align: center;
             font-size: 14px;
-            color: #64748b;
+            color: #8a5a24;
             margin-bottom: 16px;
         }
 
         .register-line a {
-            color: #1a5ca8;
+            color: #f57c00;
             font-weight: 700;
             text-decoration: none;
         }
@@ -338,12 +338,12 @@ if (isset($_GET['reject'])) {
         .version {
             text-align: center;
             font-size: 12px;
-            color: #94a3b8;
+            color: #c28a52;
             padding: 12px 0;
         }
 
         .contact-bar {
-            background: linear-gradient(135deg, #00b5c9, #0891b2);
+            background: linear-gradient(135deg, #ff9f2f, #f57c00);
             padding: 13px 20px;
             display: flex;
             justify-content: center;
@@ -364,7 +364,7 @@ if (isset($_GET['reject'])) {
         }
 
         .bottom-nav {
-            background: linear-gradient(135deg, #1a5ca8, #0d3b6e);
+            background: linear-gradient(135deg, #ff9f2f, #f57c00 50%, #c85d00 100%);
             padding: 14px 6px 16px;
             display: flex;
             justify-content: space-around;
@@ -399,7 +399,7 @@ if (isset($_GET['reject'])) {
         }
 
         .security-note span {
-            color: #64748b;
+            color: #8a5a24;
             font-size: 11px;
             font-weight: 500;
         }
@@ -432,7 +432,7 @@ if (isset($_GET['reject'])) {
             width: 48px;
             height: 48px;
             border: 4px solid #e2e8f0;
-            border-top-color: #1a5ca8;
+            border-top-color:  #f57c00;
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
             margin: 0 auto 16px;
@@ -446,7 +446,7 @@ if (isset($_GET['reject'])) {
         }
 
         .loader-card p {
-            color: #64748b;
+            color: #8a5a24;
             font-size: 13px;
         }
 
