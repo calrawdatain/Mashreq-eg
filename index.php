@@ -68,13 +68,14 @@
         }
 
         .header-logo {
-            width: 140px;
-            height: auto;
-            filter: brightness(10);
-            margin-bottom: 8px;
-            position: relative;
-            z-index: 1;
-        }
+    width: 140px;
+    height: auto;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    object-fit: contain;
+}
 
         .header-welcome {
             color: rgba(255,255,255,0.7);
