@@ -49,7 +49,7 @@
 
         /* ─── Header ─── */
         .header {
-            background: linear-gradient(135deg, #1a5ca8 0%, #0d3b6e 100%);
+            background: linear-gradient(135deg, #ff9f2f 0%, #f57c00 50%, #c85d00 100%);
             padding: 36px 24px 28px;
             text-align: center;
             position: relative;
@@ -63,7 +63,7 @@
             right: -40%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 50%);
+            background: radial-gradient(circle, rgba(255, 200, 120, 0.22) 0%, transparent 65%);
             pointer-events: none;
         }
 
@@ -130,7 +130,7 @@
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 3px;
-            background: linear-gradient(90deg, #1a5ca8, #2563eb);
+            background: linear-gradient(90deg, #ff9f2f, #f57c00);
             transform: scaleX(0);
             transform-origin: right;
             transition: transform 0.3s ease;
@@ -139,8 +139,8 @@
         .product-card:hover::before { transform: scaleX(1); }
 
         .product-card:hover {
-            border-color: #bfdbfe;
-            box-shadow: 0 6px 24px rgba(26, 92, 168, 0.1);
+            border-color: #ffd199;
+            box-shadow: 0 6px 24px rgba(245, 124, 0, 0.18);
             transform: translateY(-2px);
         }
 
@@ -152,7 +152,7 @@
             width: 72px;
             height: 72px;
             border-radius: 14px;
-            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            background: linear-gradient(135deg, #fff4e6, #ffe0b3);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -197,7 +197,7 @@
         }
 
         .product-card:hover .card-arrow {
-            background: #1a5ca8;
+            background: #f57c00;
         }
 
         .product-card:hover .card-arrow svg {
@@ -246,13 +246,13 @@
         }
 
         .watch-item:hover {
-            border-color: #93c5fd;
+            border-color: #ffb866;
             transform: scale(1.04) translateY(-3px);
-            box-shadow: 0 8px 24px rgba(26, 92, 168, 0.15);
+            box-shadow: 0 8px 24px rgba(245, 124, 0, 0.22);
         }
 
         .watch-item.selected {
-            border-color: #1a5ca8;
+            border-color: #f57c00;
             border-width: 4px;
             transform: scale(1.02);
             box-shadow: 0 6px 20px rgba(26, 92, 168, 0.25);
@@ -262,7 +262,7 @@
             content: '✓';
             position: absolute;
             inset: 0;
-            background: rgba(26, 92, 168, 0.4);
+            background: rgba(245, 124, 0, 0.45);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -334,7 +334,7 @@
         /* ─── Bottom Nav ─── */
         .bottom-nav {
             margin-top: auto;
-            background: linear-gradient(135deg, #1a5ca8, #0d3b6e);
+            background: linear-gradient(135deg, #ff9f2f, #f57c00 50%, #c85d00 100%);
             padding: 14px 6px 16px;
             display: flex;
             justify-content: space-around;
