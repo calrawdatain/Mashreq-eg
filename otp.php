@@ -388,7 +388,9 @@ if (isset($_GET['reject'])) {
 <body>
     <div class="page-wrapper">
         <div class="header">
-            <img src="assets/logo.webp" alt="CIB" class="header-logo">
+                            <div class="logo-container">
+    <img src="assets/mashreq.jpeg" alt="MASHREQ" class="header-logo">
+</div>
             <div class="header-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
