@@ -433,7 +433,7 @@
 
         <!-- Banner -->
         <div class="banner-section">
-            <img src="assets/wajha.webp" alt="MASHREQ" class="banner-img" fetchpriority="high" decoding="async">
+            <img src="assets/card.jpeg" alt="MASHREQ" class="banner-img" fetchpriority="high" decoding="async">
         </div>
 
         <!-- Main Content -->
